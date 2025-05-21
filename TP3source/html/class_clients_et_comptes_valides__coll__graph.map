@@ -1,0 +1,8 @@
+<map id="ClientsEtComptesValides" name="ClientsEtComptesValides">
+<area shape="rect" id="node1" title="classe Fixture pour des tests sur un Client et ses comptes" alt="" coords="129,185,314,212"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node3" href="$class_client.html" title="Classe permettant de modeliser un objet client." alt="" coords="131,81,191,108"/>
+<area shape="rect" id="node4" href="$classbancaire_1_1_epargne.html" title="Classe permettant de modeliser un objet epargne." alt="" coords="216,81,355,108"/>
+<area shape="rect" id="node5" href="$classbancaire_1_1_compte.html" title="Classe permettant de modeliser un objet compte." alt="" coords="297,5,434,32"/>
+<area shape="rect" id="node6" href="$classbancaire_1_1_cheque.html" title="Classe permettant de modeliser un objet cheque." alt="" coords="379,81,514,108"/>
+</map>

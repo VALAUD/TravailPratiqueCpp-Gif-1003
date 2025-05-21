@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fenetrePrincipale</class>
+ <widget class="QMainWindow" name="fenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1103</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>fenetrePrincipale</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="affichage"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1103</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Operations</string>
+    </property>
+    <widget class="QMenu" name="menuAjouter_compte">
+     <property name="title">
+      <string>Ajouter compte</string>
+     </property>
+     <addaction name="actionCompte_Cheque"/>
+     <addaction name="actionCompte_Epargne"/>
+    </widget>
+    <addaction name="menuAjouter_compte"/>
+    <addaction name="actionSupprimer_compte_bancaire"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSupprimer_compte_bancaire">
+   <property name="text">
+    <string>Supprimer compte bancaire</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionCompte_Cheque">
+   <property name="text">
+    <string>Compte Cheque</string>
+   </property>
+  </action>
+  <action name="actionCompte_Epargne">
+   <property name="text">
+    <string>Compte Epargne</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCompte_Cheque</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>dialogAjoutCompteCh()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCompte_Epargne</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>dialogAjoutCompteEp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSupprimer_compte_bancaire</sender>
+   <signal>triggered()</signal>
+   <receiver>fenetrePrincipale</receiver>
+   <slot>dialogSupprimerCompte()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dialogAjoutCompteCh()</slot>
+  <slot>dialogAjoutCompteEp()</slot>
+  <slot>dialogSupprimerCompte()</slot>
+ </slots>
+</ui>

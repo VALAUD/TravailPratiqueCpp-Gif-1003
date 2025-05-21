@@ -1,0 +1,6 @@
+<map id="UnCompteChequeValide" name="UnCompteChequeValide">
+<area shape="rect" id="node1" title="classe Fixture pour des tests sur un compte cheque" alt="" coords="5,171,185,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,81,125,108"/>
+<area shape="rect" id="node3" href="$classbancaire_1_1_cheque.html" title="Classe permettant de modeliser un objet cheque." alt="" coords="149,81,284,108"/>
+<area shape="rect" id="node4" href="$classbancaire_1_1_compte.html" title="Classe permettant de modeliser un objet compte." alt="" coords="148,5,285,32"/>
+</map>

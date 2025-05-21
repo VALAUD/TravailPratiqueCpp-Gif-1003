@@ -1,0 +1,241 @@
+\hypertarget{class_client}{}\doxysection{Client Class Reference}
+\label{class_client}\index{Client@{Client}}
+
+
+Classe permettant de modeliser un objet client.  
+
+
+
+
+{\ttfamily \#include $<$Client.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_a48250dd905e17e823a2935f647e501b5}{Client}} (int p\+\_\+no\+Folio, const std\+::string \&p\+\_\+nom, const std\+::string \&p\+\_\+prenom, const std\+::string \&p\+\_\+telephone, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&p\+\_\+date\+Naissance)
+\begin{DoxyCompactList}\small\item\em Constructeur avec paramètres. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client_acfa8686a0994751269f339cd5ea1490c}{Client}} (const \mbox{\hyperlink{class_client}{Client}} \&p\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Constructeur de copie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client}{Client}} \& \mbox{\hyperlink{class_client_a0374370dc539d0d9a36b334bc88b1b94}{operator=}} (const \mbox{\hyperlink{class_client}{Client}} \&p\+\_\+client)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}assignation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_a6ada8137b39e102a30b58ad57f8d1374}{ajouter\+Compte}} (const \mbox{\hyperlink{classbancaire_1_1_compte}{bancaire\+::\+Compte}} \&p\+\_\+nouveau\+Compte)
+\begin{DoxyCompactList}\small\item\em Ajoute un compte au client. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_client_ac32b32b3970371f4a70acd245e8b927b}{req\+No\+Folio}} (void) const
+\begin{DoxyCompactList}\small\item\em Acesseur pour Numero de folio. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_client_ad663b2926c63c1c5ceb0bd2dbe264833}{req\+Nom}} (void) const
+\begin{DoxyCompactList}\small\item\em Acesseur pour Nom. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_client_aeaf8c2aaea6aed5baf3f9317753d35fb}{req\+Prenom}} (void) const
+\begin{DoxyCompactList}\small\item\em Acesseur pour Prénom. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_client_a28c610c8c8d6498c69cdee692ed69f5b}{req\+Telephone}} (void) const
+\begin{DoxyCompactList}\small\item\em Acesseur pour Téléphone. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \& \mbox{\hyperlink{class_client_a2d377e1fb1942638bd739a54425c848a}{req\+Date\+Naissance}} (void) const
+\begin{DoxyCompactList}\small\item\em Acesseur pour Date de naissance. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_client_a3ab2bc7e589ed719117bc3ec0de897f2}{req\+Releves}} (void) const
+\begin{DoxyCompactList}\small\item\em Retourne une chaîne formatée contenant les informations du client et ses comptes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_client_a64ddf3ddd10c4a484d9d2595155b9c3f}{nb\+Comptes}} (void) const
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de comptes associés au client. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_client_a85b134783784cf35852363d1cd2d08a7}{operator$<$}} (\mbox{\hyperlink{class_client}{Client}} \&autre\+Client) const
+\begin{DoxyCompactList}\small\item\em Compare deux clients selon leur numéro de folio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_client_a840e519ca781888cbd54181572ebe3a7}\label{class_client_a840e519ca781888cbd54181572ebe3a7}} 
+virtual \mbox{\hyperlink{class_client_a840e519ca781888cbd54181572ebe3a7}{$\sim$\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la classe \mbox{\hyperlink{class_client}{Client}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe permettant de modeliser un objet client. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_client_a48250dd905e17e823a2935f647e501b5}\label{class_client_a48250dd905e17e823a2935f647e501b5}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+no\+Folio,  }\item[{const std\+::string \&}]{p\+\_\+nom,  }\item[{const std\+::string \&}]{p\+\_\+prenom,  }\item[{const std\+::string \&}]{p\+\_\+telephone,  }\item[{const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&}]{p\+\_\+date\+Naissance }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec paramètres. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+no\+Folio} & Le Numero de folio de l\textquotesingle{}objet \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom} & Le Nom de l\textquotesingle{}objet \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+prenom} & Le Prénom de l\textquotesingle{}objet \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+telephone} & Le Téléphone de l\textquotesingle{}objet \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date\+Naissance} & La Date de naissance de l\textquotesingle{}objet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un objet client 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_acfa8686a0994751269f339cd5ea1490c}\label{class_client_acfa8686a0994751269f339cd5ea1490c}} 
+\index{Client@{Client}!Client@{Client}}
+\index{Client@{Client}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Client\+::\+Client (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_client}{Client}} \&}]{p\+\_\+client }\end{DoxyParamCaption})}
+
+
+
+Constructeur de copie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+client} & L\textquotesingle{}objet client à copier \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_a6ada8137b39e102a30b58ad57f8d1374}\label{class_client_a6ada8137b39e102a30b58ad57f8d1374}} 
+\index{Client@{Client}!ajouterCompte@{ajouterCompte}}
+\index{ajouterCompte@{ajouterCompte}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{ajouterCompte()}{ajouterCompte()}}
+{\footnotesize\ttfamily void Client\+::ajouter\+Compte (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbancaire_1_1_compte}{bancaire\+::\+Compte}} \&}]{p\+\_\+nouveau\+Compte }\end{DoxyParamCaption})}
+
+
+
+Ajoute un compte au client. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nouveau\+Compte} & Le compte à ajouter (copie en profondeur via clone) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_a64ddf3ddd10c4a484d9d2595155b9c3f}\label{class_client_a64ddf3ddd10c4a484d9d2595155b9c3f}} 
+\index{Client@{Client}!nbComptes@{nbComptes}}
+\index{nbComptes@{nbComptes}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{nbComptes()}{nbComptes()}}
+{\footnotesize\ttfamily int Client\+::nb\+Comptes (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Retourne le nombre de comptes associés au client. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre de comptes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_a85b134783784cf35852363d1cd2d08a7}\label{class_client_a85b134783784cf35852363d1cd2d08a7}} 
+\index{Client@{Client}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Client\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} \&}]{autre\+Client }\end{DoxyParamCaption}) const}
+
+
+
+Compare deux clients selon leur numéro de folio. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c\+\_\+1} & Premier client à comparer \\
+\hline
+\mbox{\texttt{ in}}  & {\em c\+\_\+2} & Deuxième client à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Le client ayant le plus petit numéro de folio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_a0374370dc539d0d9a36b334bc88b1b94}\label{class_client_a0374370dc539d0d9a36b334bc88b1b94}} 
+\index{Client@{Client}!operator=@{operator=}}
+\index{operator=@{operator=}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} \& Client\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_client}{Client}} \&}]{p\+\_\+client }\end{DoxyParamCaption})}
+
+
+
+Surcharge de l\textquotesingle{}opérateur d\textquotesingle{}assignation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+client} & L\textquotesingle{}objet client à copier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Une référence sur l\textquotesingle{}objet courant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_a2d377e1fb1942638bd739a54425c848a}\label{class_client_a2d377e1fb1942638bd739a54425c848a}} 
+\index{Client@{Client}!reqDateNaissance@{reqDateNaissance}}
+\index{reqDateNaissance@{reqDateNaissance}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqDateNaissance()}{reqDateNaissance()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \& Client\+::req\+Date\+Naissance (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Acesseur pour Date de naissance. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+date\+Naissance La Date de naissance de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_ac32b32b3970371f4a70acd245e8b927b}\label{class_client_ac32b32b3970371f4a70acd245e8b927b}} 
+\index{Client@{Client}!reqNoFolio@{reqNoFolio}}
+\index{reqNoFolio@{reqNoFolio}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqNoFolio()}{reqNoFolio()}}
+{\footnotesize\ttfamily int Client\+::req\+No\+Folio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Acesseur pour Numero de folio. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+no\+Folio Le Numero de folio de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_ad663b2926c63c1c5ceb0bd2dbe264833}\label{class_client_ad663b2926c63c1c5ceb0bd2dbe264833}} 
+\index{Client@{Client}!reqNom@{reqNom}}
+\index{reqNom@{reqNom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqNom()}{reqNom()}}
+{\footnotesize\ttfamily const std\+::string \& Client\+::req\+Nom (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Acesseur pour Nom. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+nom Le Nom de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_aeaf8c2aaea6aed5baf3f9317753d35fb}\label{class_client_aeaf8c2aaea6aed5baf3f9317753d35fb}} 
+\index{Client@{Client}!reqPrenom@{reqPrenom}}
+\index{reqPrenom@{reqPrenom}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqPrenom()}{reqPrenom()}}
+{\footnotesize\ttfamily const std\+::string \& Client\+::req\+Prenom (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Acesseur pour Prénom. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+prenom Le Prénom de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_a3ab2bc7e589ed719117bc3ec0de897f2}\label{class_client_a3ab2bc7e589ed719117bc3ec0de897f2}} 
+\index{Client@{Client}!reqReleves@{reqReleves}}
+\index{reqReleves@{reqReleves}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqReleves()}{reqReleves()}}
+{\footnotesize\ttfamily std\+::string Client\+::req\+Releves (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Retourne une chaîne formatée contenant les informations du client et ses comptes. 
+
+\begin{DoxyReturn}{Returns}
+Une chaîne de caractères avec les informations personnelles et les relevés de comptes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_a28c610c8c8d6498c69cdee692ed69f5b}\label{class_client_a28c610c8c8d6498c69cdee692ed69f5b}} 
+\index{Client@{Client}!reqTelephone@{reqTelephone}}
+\index{reqTelephone@{reqTelephone}!Client@{Client}}
+\doxysubsubsection{\texorpdfstring{reqTelephone()}{reqTelephone()}}
+{\footnotesize\ttfamily const std\+::string \& Client\+::req\+Telephone (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Acesseur pour Téléphone. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+telephone Le Téléphone de l\textquotesingle{}objet 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_client_8h}{Client.\+h}}\item 
+\mbox{\hyperlink{_client_8cpp}{Client.\+cpp}}\end{DoxyCompactItemize}
